@@ -222,3 +222,152 @@ footer{
     background: #131921;
     padding: 20px 60px;
 }
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131921;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Logo */
+nav a img {
+  width: 100px;
+}
+
+/* Country Selection */
+.nav-country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-country img {
+  height: 20px;
+}
+
+.nav-country div {
+  display: flex;
+  flex-direction: column;
+  color: #c4c4c4;
+}
+
+.nav-country h1 {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Search bar */
+.nav-search {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: gray;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.nav-search-category {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #e5e5e5;
+  border-radius: 4px 0 0 4px;
+}
+
+.nav-search-category p {
+  margin: 0;
+}
+
+.nav-search-input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.nav-search-icon {
+  width: 30px;
+  background-color: #ffd64f;
+  border-radius: 0 4px 4px 0;
+  padding: 5px;
+}
+
+/* Language and Account Section */
+.nav-language, .nav-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.nav-language img {
+  width: 25px;
+}
+
+.nav-language p {
+  font-size: 14px;
+}
+
+.nav-text p {
+  font-size: 12px;
+}
+
+.nav-text h1 {
+  font-size: 14px;
+}
+
+/* Cart Icon */
+.nav-cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-cart img {
+  width: 35px;
+}
+
+/* Hover effects for cart and account items */
+.nav-cart:hover, .nav-text a:hover {
+  color: #ffd64f;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-country, .nav-search, .nav-language, .nav-text, .nav-cart {
+      margin-bottom: 10px;
+  }
+
+  .nav-search {
+      width: 100%;
+  }
+}
